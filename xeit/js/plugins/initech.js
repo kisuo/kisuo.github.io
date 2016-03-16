@@ -138,6 +138,19 @@ extend(IniTech.prototype, {
             }],
             salt: 'defaultmailid'
         },
+        
+        CM: {
+            name: '하나카드',
+            support: true,
+            rule: [{
+                hint: '주민등록번호 앞',
+                size: 6
+            }, {
+                hint: '사업자등록번호',
+                size: 10
+            }],
+            salt: 'defaultmailid'
+        },
 
         IA: {
             name: '신한생명',
