@@ -151,6 +151,19 @@ extend(IniTech.prototype, {
             }],
             salt: 'hanaskcard'
         },
+        
+        SD: {
+            name: 'SK증권',
+            support: true,
+            rule: [{
+                hint: '생년월일',
+                size: 6
+            }, {
+                hint: '사업자등록번호',
+                size: 10
+            }],
+            salt: 'skstock'
+        },
 
         IA: {
             name: '신한생명',
