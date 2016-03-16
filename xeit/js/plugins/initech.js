@@ -126,19 +126,6 @@ extend(IniTech.prototype, {
             salt: 'bccard'
         },
 
-        DI: {
-            name: '하나SK카드',
-            support: true,
-            rule: [{
-                hint: '주민등록번호 뒤',
-                size: 7
-            }, {
-                hint: '사업자등록번호',
-                size: 10
-            }],
-            salt: 'defaultmailid'
-        },
-        
         CM: {
             name: '하나카드',
             support: true,
@@ -151,18 +138,18 @@ extend(IniTech.prototype, {
             }],
             salt: 'hanaskcard'
         },
-        
-        SD: {
-            name: 'SK증권',
+
+        DI: {
+            name: '하나SK카드',
             support: true,
             rule: [{
-                hint: '생년월일',
-                size: 6
+                hint: '주민등록번호 뒤',
+                size: 7
             }, {
                 hint: '사업자등록번호',
                 size: 10
             }],
-            salt: 'skstock'
+            salt: 'defaultmailid'
         },
 
         IA: {
@@ -326,6 +313,19 @@ extend(IniTech.prototype, {
             salt: 'cjhello'
         },
 
+        SD: {
+            name: 'SK증권',
+            support: true,
+            rule: [{
+                hint: '생년월일',
+                size: 6
+            }, {
+                hint: '사업자등록번호',
+                size: 10
+            }],
+            salt: 'skstock'
+        },
+
         TC: {
             name: 'SKT',
             support: true,
@@ -376,7 +376,7 @@ extend(IniTech.prototype, {
 
                 ignore_replacer: true
             },
-            
+
             CM: {
                 fix_message: function (message) {
                     return message.replace(/href="#"/g, '').replace(".getElementById('tab_img').", '.');

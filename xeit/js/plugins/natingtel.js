@@ -28,7 +28,7 @@ extend(Natingtel.prototype, {
 
     keygen: function (password) {
         var message = CryptoJS.enc.Latin1.parse('cybos family ...'),
-            key = CryptoJS.enc.Latin1.parse(('11111111111' + password).substring(0, 16));
+            key = CryptoJS.enc.Latin1.parse(('11111111' + password).substring(0, 16));
         return {
             next: function () {
                 message = CryptoJS.SEED.encrypt(
