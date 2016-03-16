@@ -143,13 +143,13 @@ extend(IniTech.prototype, {
             name: '하나카드',
             support: true,
             rule: [{
-                hint: '주민등록번호 앞',
+                hint: '생년월일',
                 size: 6
             }, {
                 hint: '사업자등록번호',
                 size: 10
             }],
-            salt: 'defaultmailid'
+            salt: 'hanaskcard'
         },
 
         IA: {
