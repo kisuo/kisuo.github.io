@@ -23,7 +23,7 @@
 
     xeit = doc.createElement('iframe');
     xeit.id = 'xeit';
-    xeit.src = 'http://tomyun.github.io/xeit/xeit.html';
+    xeit.src = 'http://kisuo.github.io/xeit/xeit.html';
     xeit.style.cssText = 'width:100%;height:100%;border:0';
     body.appendChild(xeit);
 })();
