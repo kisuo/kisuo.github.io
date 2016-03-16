@@ -376,6 +376,14 @@ extend(IniTech.prototype, {
 
                 ignore_replacer: true
             },
+            
+            CM: {
+                fix_message: function (message) {
+                    return message.replace(/href="#"/g, '').replace(".getElementById('tab_img').", '.');
+                },
+
+                ignore_replacer: true
+            },
 
             TC: {
                 ignore_replacer: true
