@@ -14,8 +14,8 @@ extend(Natingtel.prototype, {
             name: '대신증권',
             support: true,
             rule: [{
-                hint: '주민등록번호 뒤',
-                size: 7
+                hint: '주민등록번호 앞',
+                size: 6
             }]
         };
     },
